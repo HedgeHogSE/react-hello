@@ -1,14 +1,17 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import HelloPage from "./components/pages/HelloPage";
+import WorldPage from "./components/pages/WorldPage";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Hello world!</p>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/hello" element={<HelloPage />} />
+        <Route path="/world" element={<WorldPage />} />
+      </Routes>
+    </Router>
   );
 }
-
 export default App;
