@@ -2,7 +2,7 @@ export default function WorldPage() {
 
   return (
     <div>
-      <p>World!</p>
+      <p>World!!!!!!!!!!!!</p>
     </div>
   );
 }
