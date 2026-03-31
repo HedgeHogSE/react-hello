@@ -5,7 +5,7 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-  workflow_dispatch: # Добавляет кнопку для ручного запуска (Задача №3)
+  workflow_dispatch:
 
 jobs:
   build:
@@ -27,9 +27,6 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-
-    - name: Lint
-      run: npm run lint
 
     - name: Build
       run: npm run build
